@@ -129,20 +129,21 @@ namespace Tree
 	   //Going to use the lookup method to make the code more efficent
 	    /*Node value = find(id, frame); 
 	    
-	    //if the name exists in the innermost scope
+	    //If value isnt found
             if (value == null && env == null) 
-	    	//Update value
-	    	define(id, val); 
-		
+	    	//Print undefined varibale error
+                Console.Error.WriteLine("The variable" + id.getName() + "is undefined"); */
+
 	    //if the name DOESNT exist in the innermost scope	
             else if (value == null) 
 	    	//Perform the assignment in the enclosing scope
                 env.findForAssign(id, val);
 	    
-	    //If value isnt found
+	    //if the name exists in the innermost scope
             else
-	    	//Print undefined varibale error
-                Console.Error.WriteLine("The variable" + id.getName() + "is undefined"); */
+	    	//Update value
+	    	define(id, val); 
+	    	
 		
 		
 	   if (this.lookup(id) != null)	
