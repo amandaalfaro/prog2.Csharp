@@ -1,3 +1,11 @@
+/* 
+ * @authors Amanda Alfaro and Khaleel Harris
+ * @date 13 Nov. 2016
+ * Course: CSC 4101
+ * Instructor: Gerald Baumgartner
+ * Project 2: Scheme Interpreter
+ */
+
 // SPP -- The main program of the Scheme pretty printer.
 
 using System;
