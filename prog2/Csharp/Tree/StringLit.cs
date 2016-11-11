@@ -7,12 +7,29 @@ namespace Tree
     public class StringLit : Node
     {
         private string stringVal;
-
-        public StringLit(string s)
+	    private boolean pQuotes;
+        
+        public StringLit(string s)   
         {
             stringVal = s;
         }
 
+      public StringLit(string s, bool b)   
+        {
+            stringVal = s;
+            printQuotes = b;
+
+        }
+        
+        public override void print(int n)
+        {
+            if (!quotes){
+                Console.WriteLine(stringVal); 
+            }
+            else
+                Printer.printStringLit(n, stringVal);
+        }
+        
         public override void print(int n)
         {
             Printer.printStringLit(n, stringVal);
