@@ -27,6 +27,15 @@ namespace Tree
         {
             return true;
         }
+        
+        public override Node eval(Node t, Environment env)
+        {   
+            if (env.lookup(this) != null)
+                return env.lookup(this).eval(env);
+            else    
+                return Nil.getInstance();
+
+        }
     }
 }
 
