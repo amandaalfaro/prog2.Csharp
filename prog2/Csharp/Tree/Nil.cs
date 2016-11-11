@@ -28,5 +28,11 @@ namespace Tree
         {
             return true;
         }
+        
+        public override Node eval(Environment env)
+        {   
+            throw new Exception("Error: eval() cannot be called in Nill.cs");
+        }
+        
     }
 }
