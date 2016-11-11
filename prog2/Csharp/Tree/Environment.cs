@@ -39,7 +39,7 @@ namespace Tree
         // An Environment is implemented like a Cons node, in which
         // every list element (every frame) is an association list.
         // Instead of Nil(), we use null to terminate the list.
-
+ 
         private Node frame;     	// the innermost scope, an assoc list
 	private Environment env;	// the enclosing environment
    
